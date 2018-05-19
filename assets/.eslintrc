@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "../.eslintrc"
+  ],
+
+  "plugins": ["vue", "html"],
+
+  "env": {
+    "browser": true,
+    "node": false
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+
+  "globals": {
+  },
+
+  "rules": {
+    "no-undef": ["error"],
+    "semi": [0]
+  }
+
+}
