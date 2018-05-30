@@ -4,7 +4,8 @@
 
 <template>
   <main>
-    <h1>Hello from Vue</h1>
+    <h1>Sails + Vue</h1>
+    <router-view></router-view>
   </main>
 </template>
 

@@ -12,15 +12,17 @@
 
   "parserOptions": {
     "ecmaVersion": 8,
-    "sourceType": "module"
+    "sourceType": "module",
+
   },
 
   "globals": {
   },
 
   "rules": {
-    "no-undef": ["error"],
-    "semi": [0]
+    "no-undef": [2],
+    "semi": [0],
+    "curly": [0]
   }
 
 }

@@ -1,5 +1,5 @@
 
-const extractCSS = process.env.NODE_ENV !== 'development'
+const extractCSS = process.env.NODE_ENV !== 'development';
 
 module.exports = {
   test: /\.vue?$/,
@@ -9,4 +9,4 @@ module.exports = {
       options: { extractCSS }
     }
   ]
-}
+};

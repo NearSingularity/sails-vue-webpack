@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+import sandbox from '../pages/sandbox'
 
 export default new Router({
   // mode: 'history',
@@ -11,6 +12,7 @@ export default new Router({
   // },
   routes: [
     // { path: '/', name: 'home', component: home },
+    { path: '/sandbox', name: 'home', component: sandbox },
     // { path: '*', component: lost },
   ],
 })
