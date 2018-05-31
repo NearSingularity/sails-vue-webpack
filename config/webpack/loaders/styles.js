@@ -8,13 +8,13 @@ module.exports = {
     }, {
       loader: 'css-loader',
       options: {
-        modules: true
+        // modules: true
       }
-    }, {
-      loader: 'postcss-loader',
     }, {
       loader: 'sass-loader',
       options: { sourceMap: true }
+    }, {
+      loader: 'postcss-loader',
     },
   ]
 };
