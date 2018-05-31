@@ -132,3 +132,4 @@ lib-cov
 
 api/controllers/_sandbox
 assets/js/components
+assets/js/pages/sandbox
