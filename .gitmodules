@@ -1,0 +1,3 @@
+[submodule "api/hooks/sails-webpack-4"]
+	path = api/hooks/sails-webpack-4
+	url = https://github.com/NearSingularity/sails-webpack-4.git

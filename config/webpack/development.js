@@ -18,4 +18,4 @@ module.exports = {
     poll: 1000,
     ignored: /node_modules/,
   },
-}
+};

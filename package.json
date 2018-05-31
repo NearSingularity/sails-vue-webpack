@@ -28,6 +28,7 @@
     "sails-hook-organics": "^0.14.5",
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0",
+    "sails-hook-webpacker": "^1.0.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "vue": "^2.5.16",
