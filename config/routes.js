@@ -27,14 +27,6 @@ module.exports.routes = {
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
-  'POST /api/session/create': 'session/create',
-  'GET /api/session/': 'session/get',
-  'DELETE /api/session/': 'session/delete',
-
-  'POST /api/user/create': 'user/create',
-  'POST /api/user/confirm': 'user/confirm',
-  'PUT /api/user/update': 'user/update',
-  'DELETE /api/user/': 'user/delete',
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
@@ -45,7 +37,4 @@ module.exports.routes = {
   //  ║║║║╚═╗║
   //  ╩ ╩╩╚═╝╚═╝
   'GET /csrf': { action: 'security/grant-csrf-token', policy: true },
-
-  'POST /sandbox/test': '_sandbox/test'
-
 };

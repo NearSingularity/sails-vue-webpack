@@ -130,6 +130,5 @@ lib-cov
 *.out
 *.pid
 
-api/controllers/_sandbox
 assets/js/pages/_sandbox
 assets/js/_sandbox
