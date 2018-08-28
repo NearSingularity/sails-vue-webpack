@@ -46,32 +46,11 @@ module.exports = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
+
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
-      //--------------------------------------------------------------------------
-      //  /\   To avoid checking it in to version control, you might opt to set
-      //  ||   sensitive credentials like `url` using an environment variable.
-      //
-      //  For example:
-      //  ```
-      //  sails_datastores__default__url=mysql://admin:myc00lpAssw2D@db.example.com:3306/my_prod_db
-      //  ```
-      //--------------------------------------------------------------------------
-
-      /****************************************************************************
-      *                                                                           *
-      * More adapter-specific options                                             *
-      *                                                                           *
-      * > For example, for some hosted PostgreSQL providers (like Heroku), the    *
-      * > extra `ssl: true` option is mandatory and must be provided.             *
-      *                                                                           *
-      * More info:                                                                *
-      * https://sailsjs.com/config/datastores                                     *
-      *                                                                           *
-      ****************************************************************************/
-      // ssl: true,
-
+      adapter: 'sails-postgresql',
+      url: process.env.DATABASE_URL,
+      ssl: true
     },
 
   },
@@ -197,7 +176,8 @@ module.exports = {
     //
     //--------------------------------------------------------------------------
 
-
+    adapter: '@sailshq/connect-redis',
+    url: process.env.REDIS_URL,
 
     /***************************************************************************
     *                                                                          *
@@ -268,18 +248,8 @@ module.exports = {
     * (https://sailsjs.com/docs/concepts/deployment/scaling)                   *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/socket.io-redis',
-    // url: 'redis://user:password@bigsquid.redistogo.com:9562/dbname',
-    //--------------------------------------------------------------------------
-    // /\   OR, to avoid checking it in to version control, you might opt to
-    // ||   set sensitive credentials like this using an environment variable.
-    //
-    // For example:
-    // ```
-    // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/
-    // ```
-    //--------------------------------------------------------------------------
-
+    adapter: '@sailshq/socket.io-redis',
+    url: process.env.REDIS_URL,
   },
 
 
@@ -322,7 +292,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
 
   },
 

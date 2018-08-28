@@ -1,9 +1,6 @@
 module.exports = {
-  test: /\.(js|jsx)?$/,
-  exclude: file => (
-    /node_modules/.test(file) &&
-    !/\.vue\.js/.test(file)
-  ),
+  test: /\.(js)?$/,
+  exclude: /node_modules/,
   use: [
     {
       loader: 'babel-loader',
